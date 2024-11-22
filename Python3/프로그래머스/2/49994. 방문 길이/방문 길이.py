@@ -16,7 +16,7 @@ def solution(dirs):
             if (pos[0] -1) >= -5: pos[0] -= 1
             
         new_pos = tuple(pos)
-        if old_pos != new_pos:
+        if old_pos != new_pos:  # attention!
             save.add((old_pos, new_pos))
             save.add((new_pos, old_pos))  # opposite direction
 
